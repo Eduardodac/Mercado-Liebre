@@ -1,71 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>       
-    <meta charset="UTF-8">
+    <head>
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-        <link rel="stylesheet" href="css/styles.css">  
-    
-</head>
-<body>
-    <header>
-        <article class="header">
-
-             <div class="bloque_1">
-                    <span class="imagen_mercado_libre">
-                        <img  src="/images/logo-mercado-liebre.svg" alt="">
-                    </span>
-                    <span class= "Barra_de_busqueda">
-                        <input type="text" placeholder="Buscar productos, marcas">  
-                        <button><i class="fas fa-search"></i></button>   
-                    </span>
-                    
-                    <span class="anuncio_comprar_en_cuotas"> 
-                        <i class="fas fa-check"></i> Comprar en cuotas y sin targetas de credito
-                    </span>
-             </div>
-
-                <nav class="nav">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Mercado Liebre</title>
+    </head>
+    <body>
+        <header>
+            &nbsp
+            <nav class="cabecera_tablet">
+                <nav class="cabecera">
+                    <img src="/img/logo-mercado-libre.svg" alt="Logo de mercado libre" id="Logo">
+                    <input  type="search" name="buscador" list="lista1" placeholder="Buscar productos, marcas" style="height: 30px; width: 50%" >
+                    <button class="cajaBusqueda"><i class="fas fa-search"></i></button>
+                </nav>
+                <p id= "compras"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjetas de crédito</p>
+            </nav>       
             
-                    <ul type="none" class="primero">
-                            <li><a href = "#" >Ofertas</a></li>
-                            <li><a href = "#" >Tiendas Oficiales</a></li>
-                            <li><a href = "#" >Vender</a></li>
-                            <li><a href = "#" >Ayudar</a></li>
-                    </ul>
-                    <ul type="none" class="primero">
-                        <li><a href = "/register" >Crea tu cuenta  </a> <i class="far fa-address-card"></i></li>  <!-- Se agrega la imagen con <i> -->
-                            <li><a href = "/login" >Ingresar  </a> <i class="fas fa-arrow-right"></i> </li> 
-                            <li><a href = "#" >Mis compras  </a>  <i class="fas fa-cart-arrow-down"></i> </li>
-                    </ul>
-                </nav>          
+            <nav class="listas">
+                <ul type="none" class="primero">
+                    <li><a class="viñetas" href="#">Ofertas</a></li>
+                    <li><a class="viñetas" href="#">Tiendas Oficiales</a></li>
+                    <li><a class="viñetas" href="#">Vender</a></li>
+                <li><a class="viñetas" href="#">Ayuda</a></li>
+                </ul>
 
-        </article>
-       
-    </header>
+                <ul type="none" class="segundo">
+                    <li><a class="viñetas" href="/register">Creá tu cuentas<i class="far fa-id-card"></i></a></li>
+                    <li><a class="viñetas" href="/login">Ingresá<i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a class="viñetas" href="#">Mis compras<i class="fas fa-shopping-basket"></i></a></li>
+                </ul>
+                </div>
+            </nav>
+            <div class="burger-menu"> 
+                <i class="fas fa-bars" > </i>
+        </header>
 
     <main class="ingresar_log">
     <article class="seccion_login">
      <form action="/login"  method="GET">
 
         <p class="rectangulos_log">
-             <label for="Usuario"> Usuario: </label>
-            <input type="text" name="Usuario" id="Usuario"  placeholder="Usuario" class="control_log">
+            <input type="text" name="Usuario" id="Usuario"  placeholder="Usuario" class="control_log" style="height: 30px; width: 100%">
         </p>
 
         <p>
-            <label for="pass"> Contraseña: </label>
-            <input type="password" name="pass" id="pass" placeholder="Contraseña" class="control_log">      
+            <input type="password" name="pass" id="pass" placeholder="Contraseña" class="control_log " style="height: 30px; width: 100%">      
         </p>
 
         <p>
-            <button type="submit" class="button_register_log">Enviar</button>
+            <button type="submit" class="button_register_log" style="height: 30px; width: 100%"><a href="/">Enviar</a></button>
         </p>
 
     </article>
 </main>
-    </form>
+    
+<footer>
+    <section>
+        <article>
+            <i class="fas fa-credit-card"></i>
+            <h3 class="tituloFooter">Pagá con tarjeta o en efectivo</h3>
+            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                    puntos de pago. ¡Y siempre es seguro!</p>
+        </article>
+        <article>   
+            <i class="fas fa-gift"></i>
+            <h3 class="tituloFooter">Envío gratis desde $2500</h3>
+            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.</p>
+        </article>
+        <article> 
+            <i class="fas fa-user-shield"></i></div>        
+            <h3 class="tituloFooter">Seguridad, desde principio a fin</h3>
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                    porque estás siempre protegid@.</p>
+         </article>
+    </section>
+    <h4 class="derechos"> Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
+</footer>
 </body>
 </html>

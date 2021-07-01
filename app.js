@@ -14,3 +14,13 @@ app.get('/', (_req,res)=>{
     let rutaHTML=path.join(__dirname, "./views/home.html");
     res.sendFile(rutaHTML)
 });
+
+app.get("/register", function(req,res){
+    let htmlArchivo = path.resolve(__dirname, './views/register.html')
+    res.sendFile(htmlArchivo);
+})
+
+app.get("/login", function(req,res){
+    let htmlArchivo = path.resolve(__dirname, './views/login.html')
+    res.sendFile(htmlArchivo);
+})
