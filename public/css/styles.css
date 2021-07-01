@@ -179,6 +179,10 @@ footer section article i:hover{
     color: var(--Verde);
 }
 
+footer section article p{
+    margin: 30px;
+    align-self: center;
+}   
 
 /* Logins */
 
