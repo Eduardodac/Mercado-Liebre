@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>       
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="css/styles.css">  
+    
+</head>
+<body>
+    <header>
+        <article class="header">
+
+             <div class="bloque_1">
+                    <span class="imagen_mercado_libre">
+                        <img  src="/images/logo-mercado-liebre.svg" alt="">
+                    </span>
+                    <span class= "Barra_de_busqueda">
+                        <input type="text" placeholder="Buscar productos, marcas">  
+                        <button><i class="fas fa-search"></i></button>   
+                    </span>
+                    
+                    <span class="anuncio_comprar_en_cuotas"> 
+                        <i class="fas fa-check"></i> Comprar en cuotas y sin targetas de credito
+                    </span>
+             </div>
+
+                <nav class="nav">
+            
+                    <ul type="none" class="primero">
+                            <li><a href = "#" >Ofertas</a></li>
+                            <li><a href = "#" >Tiendas Oficiales</a></li>
+                            <li><a href = "#" >Vender</a></li>
+                            <li><a href = "#" >Ayudar</a></li>
+                    </ul>
+                    <ul type="none" class="primero">
+                        <li><a href = "/register" >Crea tu cuenta  </a> <i class="far fa-address-card"></i></li>  <!-- Se agrega la imagen con <i> -->
+                            <li><a href = "/login" >Ingresar  </a> <i class="fas fa-arrow-right"></i> </li> 
+                            <li><a href = "#" >Mis compras  </a>  <i class="fas fa-cart-arrow-down"></i> </li>
+                    </ul>
+                </nav>          
+
+        </article>
+       
+    </header>
+
+    <main class="ingresar_log">
+    <article class="seccion_login">
+     <form action="/login"  method="GET">
+
+        <p class="rectangulos_log">
+             <label for="Usuario"> Usuario: </label>
+            <input type="text" name="Usuario" id="Usuario"  placeholder="Usuario" class="control_log">
+        </p>
+
+        <p>
+            <label for="pass"> Contraseña: </label>
+            <input type="password" name="pass" id="pass" placeholder="Contraseña" class="control_log">      
+        </p>
+
+        <p>
+            <button type="submit" class="button_register_log">Enviar</button>
+        </p>
+
+    </article>
+</main>
+    </form>
+</body>
+</html>

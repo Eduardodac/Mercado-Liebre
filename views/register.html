@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>       
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <header>
+        <article class="header">
+
+             <div class="bloque_1">
+                    <span class="imagen_mercado_libre">
+                        <img  src="/images/logo-mercado-liebre.svg" alt="">
+                    </span>
+                    <span class= "Barra_de_busqueda">
+                        <input type="text" placeholder="Buscar productos, marcas">  
+                        <button><i class="fas fa-search"></i></button>   
+                    
+                    <span class="anuncio_comprar_en_cuotas"> 
+                        <i class="fas fa-check"></i> Comprar en cuotas y sin targetas de credito
+                    </span>
+             </div>
+
+                <nav class="nav">
+            
+                    <ul type="none" class="primero">
+                            <li><a href = "#" >Ofertas</a></li>
+                            <li><a href = "#" >Tiendas Oficiales</a></li>
+                            <li><a href = "#" >Vender</a></li>
+                            <li><a href = "#" >Ayudar</a></li>
+                    </ul>
+                    <ul type="none" class="primero">
+                        <li><a href = "/register" >Crea tu cuenta  </a> <i class="far fa-address-card"></i></li>  <!-- Se agrega la imagen con <i> -->
+                            <li><a href = "/login" >Ingresar  </a> <i class="fas fa-arrow-right"></i> </li> 
+                            <li><a href = "#" >Mis compras  </a>  <i class="fas fa-cart-arrow-down"></i> </li>
+                    </ul>
+                </nav>          
+
+        </article>
+       
+    </header>
+
+    <main class="suscription">
+    <article class="seccion_registro">
+     <form action="/registro"  method="GET">
+        <p class="rectangulos">
+
+            <input type="text" name="nombre" id="nombre"   placeholder="Nombre y apellido" class="control_rec">
+        </p>
+        <p class="rectangulos">
+
+            <input type="text" name="Usuario" id="Usuario"  placeholder="Usuario" class="control_rec">
+        </p>
+        <p class="rectangulos">
+
+            <input type="date" name="nacimiento" id="nacimiento" placeholder="Fecha de nacimiento" class="control_rec">
+        </p>
+        <p class="rectangulos">
+
+            <input type="text" name="Domicilio" id="Domicilio"  placeholder="Domicilio" class="control_rec">
+        </p>
+        
+        <label > Perfil del usuario: </label>
+        <p>            
+            <label>
+                <input type="radio" name="perfilDeUsuario">Comprador 
+            </label>
+            <label>
+                <input type="radio" name="perfilDeUsuario">Vendedor
+            </label>
+        </p>
+
+        <p>
+            <label > Categorias de interes: </label>
+            <label >
+                <input type="checkbox" name="CategoriasDeInteres" >Electro
+            </label>
+        
+            <label >
+                <input type="checkbox" name="CategoriasDeInteres" > Moda
+            </label>
+        
+            <label >
+                <input type="checkbox" name="CategoriasDeInteres"> Hogar
+            </label>
+            <label >
+                <input type="checkbox" name="CategoriasDeInteres" > Jugueteria 
+            </label>
+        
+            <label >
+                <input type="checkbox" name="CategoriasDeInteres"> Vida sana
+            </label>       
+        </p>
+
+        <p>
+            <label >Foto de usuario:</label>
+            <input type="file" name="avatar" accept=".jpg" multiple   placeholder="Foto">
+        </p>
+
+        <p>
+            <label for="pass"> Contraseña: </label>
+            <input type="password" name="pass" id="pass" placeholder="Contraseña" class="control_rec">      
+        </p>
+        <p>
+            <label for="R_pass"> Repide la Contraseña: </label>
+            <input type="password" name="R_pass" id="R_pass" class="control_rec">      
+        </p>
+
+        <p>
+            <button type="reset"  class="button_register">Borrar</button>
+            <button type="submit" class="button_register">Enviar</button>
+        </p>
+
+    </article>
+</main>
+    </form>
+</body>
+</html>
