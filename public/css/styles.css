@@ -195,7 +195,7 @@ footer section article i:hover{
 .seccion_login button{
     margin-top: 10px;
     color: #000000;
-    transition: all 100ms;
+    transition: all 1s;
 }
 
 .seccion_login button:hover{
@@ -252,10 +252,10 @@ p.foto{
 p.felina{
     display: flex;
     justify-content: center;
-    transition: all 100ms;
+    transition: all .2s;
 }
 p.felina button{
-    transition: all 100ms;
+    transition: all .2s;
 }
 
 p.felina button:hover{
