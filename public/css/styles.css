@@ -169,7 +169,7 @@ footer{
 
 footer section article i{
     display: block;
-    font-size: 200%;
+    font-size: 2em;
     color: blue;
     padding: 3%;
 }
